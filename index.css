@@ -1077,6 +1077,112 @@ section {
     }
 }
 
+/* Trust Section (Statistics) */
+.trust-section {
+    padding: 30px 0 60px 0;
+    margin-top: -30px;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.trust-card {
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: var(--transition-smooth);
+}
+
+.trust-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--clr-cyan);
+    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.2);
+}
+
+.trust-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    background: linear-gradient(45deg, var(--clr-cyan), var(--clr-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trust-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+/* Badge and Pulsing Glow Updates to make SandBox & Contact Form stand out */
+.badge-free-try {
+    display: inline-block;
+    background: rgba(0, 242, 254, 0.2);
+    border: 1px solid var(--clr-cyan);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-right: 12px;
+    text-shadow: 0 0 5px var(--clr-cyan);
+}
+
+/* Glowing Border pulsing for SandBox and Contact Form */
+#ai-sandbox {
+    border: 2px solid var(--clr-cyan);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+    animation: pulse-cyan 4s infinite alternate;
+}
+
+.contact-form-wrapper {
+    border: 2px solid var(--clr-secondary);
+    box-shadow: 0 0 25px rgba(233, 64, 87, 0.15);
+    animation: pulse-magenta 4s infinite alternate;
+}
+
+/* Custom Pulsing Keyframes */
+@keyframes pulse-cyan {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 242, 254, 0.15);
+        border-color: rgba(0, 242, 254, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 242, 254, 0.35);
+        border-color: rgba(0, 242, 254, 0.8);
+    }
+}
+
+@keyframes pulse-magenta {
+    0% {
+        box-shadow: 0 0 15px rgba(233, 64, 87, 0.15);
+        border-color: rgba(233, 64, 87, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 35px rgba(233, 64, 87, 0.35);
+        border-color: rgba(233, 64, 87, 0.8);
+    }
+}
+
+@media (max-width: 992px) {
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .hero-container {

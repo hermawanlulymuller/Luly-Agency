@@ -60,6 +60,30 @@
             </div>
         </section>
 
+        <!-- Trust Section (Statistic Cards) -->
+        <section class="trust-section" id="trust">
+            <div class="container trust-container">
+                <div class="trust-grid">
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-number gradient-text">500+</div>
+                        <div class="trust-label">AI Workflows Built</div>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-number gradient-text">120+</div>
+                        <div class="trust-label">Business Clients</div>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-number gradient-text">98%</div>
+                        <div class="trust-label">Client Satisfaction</div>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-number gradient-text">24/7</div>
+                        <div class="trust-label">AI Automation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Social Proof: Lulyart Verification -->
         <section class="proof-section" id="about-lulyart">
             <div class="container">
@@ -79,9 +103,14 @@
                         <h3>Spotify Streaming</h3>
                         <p>Katalog aktif Lulyart menyajikan kualitas audio berstandar industri dengan ribuan pendengar mandiri.</p>
                         <!-- GANTI DENGAN LINK ARTIST SPOTIFY SPESIFIK JIKA ADA -->
-                        <a href="https://open.spotify.com/search/Lulyart" target="_blank" rel="noopener" class="proof-link" id="spotify-artist-link">
-                            Buka Spotify Lulyart <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
+                        <div class="spotify-links-wrapper" style="display: flex; flex-direction: column; gap: 10px;">
+                            <a href="https://open.spotify.com/search/Lulyart" target="_blank" rel="noopener" class="proof-link" id="spotify-artist-link">
+                                <i class="fa-brands fa-spotify"></i> Buka Spotify Artist <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://open.spotify.com/playlist/0XtYKprk12whcVcOAXue5v?si=I3JmIEO1QWuzrA1hAy4aVQ" target="_blank" rel="noopener" class="proof-link" id="spotify-playlist-link" style="color: var(--clr-cyan);">
+                                <i class="fa-solid fa-music"></i> Dengarkan Playlist Lulyart <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="proof-card glass">
@@ -166,7 +195,7 @@
                 <!-- AI Agent Sandbox (Interactive Tryout) -->
                 <div class="sandbox-container glass" id="ai-sandbox">
                     <div class="sandbox-header">
-                        <h3><i class="fa-solid fa-terminal"></i> Uji Coba AI Agent Simulator</h3>
+                        <h3 class="sandbox-title-glow"><span class="badge-free-try animate-pulse">COBA AI GRATIS</span> Uji Coba AI Agent Simulator</h3>
                         <p>Pilih tipe AI Agent di bawah, ketik ide topik atau pesan Anda, lalu saksikan bagaimana Agent mengotomatisasi pekerjaan Anda secara real-time.</p>
                     </div>
                     <div class="sandbox-body">
@@ -337,6 +366,12 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Big WA CTA Button (Konsultasi Gratis) -->
+                    <div style="margin-top: 30px;">
+                        <a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency,%20saya%20tertarik%20dengan%20layanan%20AI%20Automation%20/%20Audio%20Branding%20dan%20ingin%20Konsultasi%20Gratis." target="_blank" rel="noopener" class="btn btn-primary animate-pulse" style="background: linear-gradient(45deg, #128C7E, #25D366); border: none; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); font-weight: 700; width: 100%; display: flex; justify-content: center; gap: 10px; font-size: 1.05rem;" id="contact-wa-btn-gratis">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i> Chat WhatsApp (Konsultasi Gratis)
+                        </a>
+                    </div>
                 </div>
 
                 <div class="contact-form-wrapper glass">
@@ -385,8 +420,8 @@
             <p class="footer-logo"><span class="logo-accent">Luly</span> Agency</p>
             <p class="copyright">&copy; 2026 Luly Agency. All Rights Reserved. Built with Antigravity AI.</p>
             <div class="footer-socials">
-                <!-- LINK SPOTIFY ARTIST -->
-                <a href="https://open.spotify.com/search/Lulyart" target="_blank" rel="noopener" aria-label="Spotify" id="footer-spotify"><i class="fa-brands fa-spotify"></i></a>
+                <!-- LINK SPOTIFY PLAYLIST -->
+                <a href="https://open.spotify.com/playlist/0XtYKprk12whcVcOAXue5v?si=I3JmIEO1QWuzrA1hAy4aVQ" target="_blank" rel="noopener" aria-label="Spotify Playlist" id="footer-spotify"><i class="fa-brands fa-spotify"></i></a>
                 <!-- LINK YOUTUBE OFFICIAL -->
                 <a href="https://www.youtube.com/results?search_query=Lulyart" target="_blank" rel="noopener" aria-label="YouTube Channel" id="footer-youtube"><i class="fa-brands fa-youtube"></i></a>
                 <!-- LINK INSTAGRAM PRIBADI / BRAND -->
