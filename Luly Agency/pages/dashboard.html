@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Luly Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/src/styles/dashboard.css">
+</head>
+<body>
+    <header class="main-header glass" id="site-header">
+        <div class="container nav-container">
+            <a href="/" class="logo"><span class="logo-accent">Luly</span> Agency</a>
+            <nav class="nav-menu">
+                <span class="nav-link text-muted" id="user-email"></span>
+                <button class="btn btn-outline" id="logout-btn">Keluar</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-page">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <span class="section-tag">CRM Dashboard</span>
+                    <h1 class="section-title">Leads & <span class="gradient-text">Pipeline</span></h1>
+                    <p class="section-desc">Role: <strong id="user-role">-</strong></p>
+                </div>
+            </div>
+
+            <p id="leads-error" class="auth-error"></p>
+
+            <div class="dashboard-filters glass" style="margin-bottom: 24px; padding: 20px; border-radius: 16px; display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+                <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                    <label for="filter-business" style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; display: block; font-weight: 600;">Filter Bisnis</label>
+                    <select id="filter-business" style="width: 100%; padding: 10px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-light); border-radius: 8px; color: var(--text-main); font-weight: 500;">
+                        <option value="">Semua Bisnis</option>
+                        <option value="luly_agency">Luly Agency</option>
+                        <option value="lulyart">Lulyart</option>
+                        <option value="brigade571">Brigade571</option>
+                        <option value="luly_wallet">Luly Wallet</option>
+                        <option value="luly_umkm">Luly UMKM</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                    <label for="filter-status" style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; display: block; font-weight: 600;">Filter Status</label>
+                    <select id="filter-status" style="width: 100%; padding: 10px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-light); border-radius: 8px; color: var(--text-main); font-weight: 500;">
+                        <option value="">Semua Status</option>
+                        <option value="new">New</option>
+                        <option value="contacted">Contacted</option>
+                        <option value="qualified">Qualified</option>
+                        <option value="proposal">Proposal</option>
+                        <option value="won">Won</option>
+                        <option value="lost">Lost</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="dashboard-table-wrapper glass">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Nama / Bisnis</th>
+                            <th>WhatsApp / Email</th>
+                            <th>Layanan</th>
+                            <th>Status Pipeline</th>
+                            <th>Assignee</th>
+                            <th>Tanggal</th>
+                            <th>Aksi CRM</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-table-body">
+                        <tr><td colspan="7" class="text-center text-muted">Memuat data...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="dashboard-phases glass">
+                <h3>Roadmap Platform</h3>
+                <ul class="phase-list">
+                    <li class="done">✓ Phase 1–4: Repository, Supabase, Landing Backend, Auth</li>
+                    <li class="done">✓ Phase 5: CRM Pipeline & Lead Assignment</li>
+                    <li class="done">✓ Phase 6: Automation (WhatsApp, Notifications, Webhooks)</li>
+                    <li class="done">✓ Phase 7: Payments & Subscriptions (Midtrans Integration)</li>
+                    <li class="done">✓ Phase 8: AI Agent Integration (Gemini Proposals)</li>
+                    <li class="done">✓ Phase 9: Production Hardening & Monitoring</li>
+                    <li class="done">✓ Phase 10: Multi-Business Shared Database</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- AI Proposal Modal -->
+    <div id="ai-proposal-modal" class="modal hide" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1050; display: flex; align-items: center; justify-content: center; padding: 20px;">
+        <div class="modal-content glass" style="width: 100%; max-width: 600px; padding: 30px; border-radius: 16px; position: relative;">
+            <button id="close-proposal-btn" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <h3 style="margin-bottom: 8px; font-family: var(--font-heading); color: var(--text-main);" class="gradient-text">AI Proposal & Follow-up</h3>
+            <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 20px;">Menghasilkan rancangan draft penawaran otomatis dari Gemini AI.</p>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label style="font-size: 0.85rem; display: block; margin-bottom: 6px; font-weight: 500;">Hasil Copywriting Draft</label>
+                <textarea id="ai-proposal-result" rows="12" style="width: 100%; padding: 12px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-light); border-radius: 8px; color: var(--text-main); font-family: monospace; font-size: 0.85rem; resize: vertical; outline: none; line-height: 1.5;"></textarea>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button id="copy-proposal-btn" class="btn btn-outline" style="flex: 1;"><i class="fa-regular fa-copy"></i> Salin Teks</button>
+                <a id="share-wa-proposal-btn" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1; text-align: center; display: inline-flex; align-items: center; justify-content: center; gap: 8px;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Follow-up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment / QRIS Modal -->
+    <div id="payment-modal" class="modal hide" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1050; display: flex; align-items: center; justify-content: center; padding: 20px;">
+        <div class="modal-content glass" style="width: 100%; max-width: 420px; padding: 30px; border-radius: 16px; text-align: center; position: relative;">
+            <button id="close-payment-btn" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <h3 style="margin-bottom: 8px; font-family: var(--font-heading); color: var(--text-main);" class="gradient-text">Midtrans QRIS & Invoice</h3>
+            <p id="payment-details" class="text-muted" style="font-size: 0.85rem; margin-bottom: 20px;">Menyiapkan Invoice Tagihan...</p>
+            
+            <div id="qris-img-container" style="background: white; padding: 15px; border-radius: 12px; display: inline-block; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                <img id="qris-image" src="" alt="QRIS QR Code" style="width: 180px; height: 180px; display: block; margin: 0 auto;">
+            </div>
+            
+            <p id="payment-status-hint" style="font-size: 0.8rem; color: var(--clr-cyan); font-weight: 500; margin-bottom: 20px;"><i class="fa-solid fa-arrows-spin fa-spin"></i> Menunggu scan & bayar...</p>
+            <button id="simulate-pay-btn" class="btn btn-primary btn-block">Simulasi Bayar Sukses (QRIS)</button>
+        </div>
+    </div>
+
+    <script src="/src/js/config/env.runtime.js"></script>
+    <script type="module" src="/src/js/pages/dashboard.js"></script>
+</body>
+</html>

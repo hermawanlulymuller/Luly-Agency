@@ -1,0 +1,106 @@
+/* Dashboard — extends index.css design tokens */
+
+.dashboard-page {
+    padding: 100px 0 60px;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-table-wrapper {
+    padding: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.dashboard-table th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.dashboard-table td {
+    color: var(--text-main);
+}
+
+.dashboard-table tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.dashboard-phases {
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.dashboard-phases h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 16px;
+}
+
+.phase-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phase-list li {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.phase-list li.done {
+    color: var(--clr-cyan);
+}
+
+@media (max-width: 768px) {
+    .dashboard-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .dashboard-table {
+        min-width: 600px;
+    }
+}
+
+/* Modal Popup layouts */
+.modal {
+    transition: opacity 0.25s ease;
+}
+.modal.hide {
+    display: none !important;
+}
+.modal-content {
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

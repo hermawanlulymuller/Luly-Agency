@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luly Agency - Agensi AI Automation & Solusi Digital Premium. Otomatisasikan website, database, workflow, WhatsApp, dan audio branding bisnis Anda.">
+    <title>Luly Agency | AI Automation & Digital Systems Agency</title>
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header glass" id="site-header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-accent">Luly</span> Agency
+            </a>
+            <nav class="nav-menu" id="nav-menu-bar">
+                <a href="#hero" class="nav-link" id="nav-home">Home</a>
+                <a href="#trust" class="nav-link" id="nav-trust-menu">Why AI</a>
+                <a href="#services" class="nav-link" id="nav-services-menu">Services</a>
+                <a href="#portfolio" class="nav-link" id="nav-portfolio-menu">Portfolio</a>
+                <a href="#faq" class="nav-link" id="nav-faq-menu">FAQ</a>
+                <select id="business-context-selector" class="business-select-nav">
+                    <option value="luly_agency">Luly Agency</option>
+                    <option value="lulyart">Lulyart</option>
+                    <option value="brigade571">Brigade571</option>
+                    <option value="luly_wallet">Luly Wallet</option>
+                    <option value="luly_umkm">Luly UMKM</option>
+                </select>
+                <a href="/login" class="nav-link" id="nav-login">Login</a>
+                <a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency,%20saya%20tertarik%20ingin%20Konsultasi%20Gratis." target="_blank" rel="noopener" class="nav-cta-btn" id="nav-cta-contact">Konsultasi Gratis</a>
+            </nav>
+            <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-new animate-pulse" id="hero-badge">
+                        <span>🚀</span> Solusi Musik & AI Terjangkau untuk UMKM
+                    </div>
+                    <h1 class="hero-title">Kami Bantu Pekerjaan Anda Makin Simpel. <br><span class="gradient-text">Jingle + AI WhatsApp Mulai Rp200rb!</span></h1>
+                    <p class="hero-subtitle">
+                        Hemat biaya iklan dengan Jingle kustom bebas hak cipta dan chatbot WhatsApp otomatis yang membalas pelanggan 24 jam nonstop. Hasil jadi dalam 3-7 hari kerja.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency,%20saya%20tertarik%20dengan%20Jingle%20%2B%20AI%20WhatsApp%20UMKM%20mulai%20Rp200rb." target="_blank" rel="noopener" class="btn btn-primary" id="hero-btn-consult">📅 Konsultasi via WhatsApp</a>
+                        <a href="#services" class="btn btn-outline" id="hero-btn-demo">Lihat semua layanan</a>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Interactive Mockup Panel -->
+                <div class="hero-visual-wrapper">
+                    <div class="visual-glow-glow"></div>
+                    <div class="mockup-panel glass">
+                        <div class="mockup-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="mockup-title">Luly Agency Automation Panel v1.0</span>
+                        </div>
+                        <div class="mockup-body">
+                            <!-- Analytics Card -->
+                            <div class="mockup-card glass">
+                                <div class="card-meta">SYSTEM STATUS</div>
+                                <div class="card-value">24/7 ACTIVE</div>
+                                <div class="card-sub text-green"><i class="fa-solid fa-arrow-trend-up"></i> +142% efficiency increase</div>
+                            </div>
+                            
+                            <!-- Waveform/Workflow Visualizer -->
+                            <div class="mockup-card glass">
+                                <div class="card-meta">SONIC SIGNAL (LULYART LIVE)</div>
+                                <div class="waveform-anim">
+                                    <span class="bar bar-1"></span>
+                                    <span class="bar bar-2"></span>
+                                    <span class="bar bar-3"></span>
+                                    <span class="bar bar-4"></span>
+                                    <span class="bar bar-5"></span>
+                                    <span class="bar bar-6"></span>
+                                </div>
+                            </div>
+
+                            <!-- Animated Workflow steps -->
+                            <div class="workflow-steps-mini">
+                                <div class="mini-step done"><i class="fa-solid fa-envelope"></i> Email In</div>
+                                <div class="mini-line-connector"></div>
+                                <div class="mini-step running"><i class="fa-solid fa-robot"></i> AI Process</div>
+                                <div class="mini-line-connector"></div>
+                                <div class="mini-step waiting"><i class="fa-solid fa-database"></i> DB Write</div>
+                            </div>
+
+                            <!-- Floating Notification -->
+                            <div class="floating-notif glass-border">
+                                <i class="fa-solid fa-bell text-orange"></i>
+                                <div>
+                                    <h5>Notion Database Updated</h5>
+                                    <p>Lead "Ahmad - UMKM" synced successfully</p>
+                                </div>
+                            </div>
+
+                            <!-- AI Agent Mini Chat Window -->
+                            <div class="mini-chat glass-border">
+                                <div class="chat-line bot"><span>Luly Agent:</span> Ada yang bisa dibantu, kak?</div>
+                                <div class="chat-line user"><span>Client:</span> Custom jingle UMKM ada diskon?</div>
+                                <div class="chat-line bot highlighted"><span>Luly Agent:</span> Ada promo diskon! Mulai dari Rp200k aman dari hak cipta.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="container text-center">
+                <p class="social-proof-title">Trusted Technologies We Integrate</p>
+                <div class="tech-logos-grid">
+                    <div class="tech-logo" title="Supabase"><i class="fa-solid fa-database"></i> Supabase</div>
+                    <div class="tech-logo" title="Google Cloud"><i class="fa-brands fa-google"></i> Google Cloud</div>
+                    <div class="tech-logo" title="Google Workspace"><i class="fa-solid fa-briefcase"></i> Google Workspace</div>
+                    <div class="tech-logo" title="AppSheet"><i class="fa-solid fa-mobile-screen"></i> AppSheet</div>
+                    <div class="tech-logo" title="OpenAI"><i class="fa-solid fa-brain"></i> OpenAI</div>
+                    <div class="tech-logo" title="GitHub"><i class="fa-brands fa-github"></i> GitHub</div>
+                    <div class="tech-logo" title="Vercel"><i class="fa-solid fa-triangle-exclamation"></i> Vercel</div>
+                    <div class="tech-logo" title="n8n"><i class="fa-solid fa-circle-nodes"></i> n8n</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust-section" id="trust">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Value Proposition</span>
+                    <h2 class="section-title">Mengapa Banyak Bisnis Mulai <span class="gradient-text">Beralih ke AI?</span></h2>
+                    <p class="section-desc">Penerapan teknologi kecerdasan buatan dan otomatisasi bukan lagi masa depan, melainkan standar baru untuk memenangkan kompetisi bisnis hari ini.</p>
+                </div>
+                
+                <div class="trust-cards-grid">
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        <h3>Menghemat Puluhan Jam Kerja</h3>
+                        <p>Delegasikan tugas berulang ke AI Agent, sehingga tim Anda dapat fokus pada pertumbuhan strategis.</p>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                        <h3>Mengurangi Kesalahan Administrasi</h3>
+                        <p>Automasi input data meminimalisir kesalahan manusia (*human error*) dalam pendataan internal bisnis.</p>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                        <h3>Respon Pelanggan Lebih Cepat</h3>
+                        <p>Dapatkan tanggapan otomatis untuk setiap pesan pelanggan masuk dalam hitungan detik secara konstan.</p>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Data Tersimpan Aman di Cloud</h3>
+                        <p>Integrasi database terpusat yang aman, tersinkronisasi secara real-time, dan mudah diakses kapan saja.</p>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-icon"><i class="fa-solid fa-display"></i></div>
+                        <h3>Akses Mudah HP & Komputer</h3>
+                        <p>Pantau dashboard analytics dan operasional tim Anda langsung dari genggaman ponsel maupun komputer.</p>
+                    </div>
+                    <div class="trust-card glass animate-glow">
+                        <div class="trust-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Efisiensi Tanpa Tambah Karyawan</h3>
+                        <p>Tingkatkan performa output bisnis Anda berlipat ganda tanpa harus memperbesar tim operasional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Our Expertise</span>
+                    <h2 class="section-title">Semua Solusi Digital dalam <span class="gradient-text">Satu Agency</span></h2>
+                    <p class="section-desc">Kami merancang arsitektur sistem dari hulu ke hilir untuk membantu bisnis Anda bertransformasi secara digital.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass">
+                        <div class="service-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                        <h3>AI Automation</h3>
+                        <p>Kami membangun integrasi workflow otomatis, notifikasi real-time, serta sistem persetujuan (*approval process*) tanpa campur tangan manual.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card glass">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Business Website</h3>
+                        <p>Landing page modern dengan konversi tinggi, Company Profile mewah, serta sistem membership berkecepatan tinggi.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card glass">
+                        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Dashboard Analytics</h3>
+                        <p>Sistem CRM kustom, monitor indikator bisnis (KPI), serta visualisasi grafik analytics data secara interaktif.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card glass">
+                        <div class="service-icon"><i class="fa-solid fa-qrcode"></i></div>
+                        <h3>Organization System</h3>
+                        <p>Registrasi keanggotaan otomatis, kartu anggota digital QR Code, sistem penugasan dinamis, dan portal pengaduan online.</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="service-card glass">
+                        <div class="service-icon"><i class="fa-solid fa-music"></i></div>
+                        <h3>Music Branding (Lulyart Proof)</h3>
+                        <p>Jingle komersial kustom, audio logo, dan lisensi lagu legal komersial dari katalog hits Lulyart untuk promosi bebas hak cipta.</p>
+                        <!-- Spotify link integration from user request -->
+                        <div class="spotify-badge-wrapper" style="margin-top: 15px;">
+                            <a href="https://open.spotify.com/playlist/0XtYKprk12whcVcOAXue5v?si=I3JmIEO1QWuzrA1hAy4aVQ" target="_blank" rel="noopener" class="proof-link-spotify">
+                                <i class="fa-brands fa-spotify"></i> Dengarkan Playlist Lulyart <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="service-card glass">
+                        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>AI Agent Development</h3>
+                        <p>Asisten AI pintar 24/7 untuk Customer Service otomatis, integrasi internal knowledge base, dan bot pendeteksi lead sosial media.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive AI Sandbox (Coba AI Gratis) -->
+        <section class="sandbox-section" id="ai-sandbox">
+            <div class="container">
+                <div class="sandbox-container glass" id="ai-sandbox-widget">
+                    <div class="sandbox-header">
+                        <h3 class="sandbox-title-glow">
+                            <span class="badge-free-try animate-pulse">COBA AI GRATIS</span> Uji Coba AI Agent Simulator
+                        </h3>
+                        <p>Pilih tipe AI Agent di bawah, masukkan ide bisnis atau pesan Anda, dan saksikan AI merumuskan sistem automasi Anda secara langsung.</p>
+                    </div>
+                    <div class="sandbox-body">
+                        <div class="sandbox-controls">
+                            <div class="form-group">
+                                <label for="sandbox-agent-type" class="label-muted">Pilih Tipe Agent</label>
+                                <select id="sandbox-agent-type" class="select">
+                                    <option value="creator">Creator Auto-Pilot Agent</option>
+                                    <option value="affiliate">Affiliate Cash-Flow Agent</option>
+                                    <option value="crm">Enterprise Lead-Gen (B2B CRM) Agent</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sandbox-input-text" id="sandbox-input-label" class="label-muted">Topik Video atau Tema Konten Anda</label>
+                                <input type="text" id="sandbox-input-text" class="input" placeholder="Contoh: 3 Tips Sukses Bisnis Kopi Susu">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" id="sandbox-run-btn">Jalankan AI Agent Simulator</button>
+                        </div>
+                        <div class="sandbox-output-display glass">
+                            <div class="output-header">
+                                <span class="output-status" id="sandbox-status-text"><span class="bot-status-dot grey" id="sandbox-status-dot"></span> Menunggu Input...</span>
+                            </div>
+                            <div class="output-log" id="sandbox-log">
+                                <div class="log-line text-muted">// Hasil kompilasi automasi AI Agent akan muncul di sini...</div>
+                            </div>
+                            <div class="output-result hide" id="sandbox-result-box">
+                                <h4>Output Berhasil Dihasilkan:</h4>
+                                <div class="result-content" id="sandbox-result-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Our Workflow</span>
+                    <h2 class="section-title">Bagaimana Kami <span class="gradient-text">Membangun Sistem Anda</span></h2>
+                    <p class="section-desc">Proses terstruktur untuk menjamin kualitas pengembangan dari konsultasi awal hingga rilis publik.</p>
+                </div>
+                
+                <div class="workflow-steps-container">
+                    <div class="workflow-step-card">
+                        <div class="step-num">01</div>
+                        <h4>Gratis Konsultasi</h4>
+                        <p>Diskusi awal memetakan tantangan bisnis Anda tanpa biaya.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="workflow-step-card">
+                        <div class="step-num">02</div>
+                        <h4>Analisa Kebutuhan</h4>
+                        <p>Penyusunan blueprint teknis dan estimasi ROI sistem.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="workflow-step-card">
+                        <div class="step-num">03</div>
+                        <h4>Desain Sistem</h4>
+                        <p>Visualisasi arsitektur data, alur kerja, dan visual UI.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="workflow-step-card">
+                        <div class="step-num">04</div>
+                        <h4>Development</h4>
+                        <p>Coding sistem, pelatihan AI Agent, dan koneksi API.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="workflow-step-card">
+                        <div class="step-num">05</div>
+                        <h4>Launch</h4>
+                        <p>Instalasi cloud, integrasi platform, dan serah terima sistem.</p>
+                    </div>
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="workflow-step-card">
+                        <div class="step-num">06</div>
+                        <h4>Maintenance</h4>
+                        <p>Dukungan teknis berkala, optimasi performa, & update AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Luly Agency Section -->
+        <section class="why-us-section" id="why-us">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2 class="section-title">Kami Tidak Hanya Membuat Website.<br><span class="gradient-text">Kami Membangun Sistem yang Menghasilkan.</span></h2>
+                    <p class="section-desc">Website estetik saja tidak cukup. Anda membutuhkan infrastruktur automasi yang efisien.</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>AI Ready</h4>
+                            <p>Sistem dirancang langsung terintegrasi dengan model kecerdasan buatan termutakhir.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Cloud Database</h4>
+                            <p>Penyimpanan cloud andal menggunakan server tercepat dari Supabase & Google.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Mobile Friendly</h4>
+                            <p>Desain responsif sempurna yang dioptimalkan untuk performa layar handphone.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Automation</h4>
+                            <p>Semua alur kerja data berjalan otomatis di balik layar secara realtime.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Secure</h4>
+                            <p>Protokol keamanan data ketat dengan proteksi enkripsi SSL & RLS Supabase.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Scalable</h4>
+                            <p>Sistem kokoh yang siap menangani volume data dan trafik pengguna skala besar.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Easy Maintenance</h4>
+                            <p>Panel admin intuitif yang memudahkan pembaruan sistem secara mandiri.</p>
+                        </div>
+                    </div>
+                    <div class="why-card glass">
+                        <i class="fa-solid fa-circle-check text-orange"></i>
+                        <div>
+                            <h4>Fast Deployment</h4>
+                            <p>Metodologi kerja gesit menjamin penyelesaian sistem tepat waktu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Counter Section -->
+        <section class="stats-section" id="statistics">
+            <div class="container stats-container">
+                <div class="stat-card glass">
+                    <div class="stat-number gradient-text" data-target="100">0</div>
+                    <div class="stat-label">Workflow Created</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number gradient-text" data-target="50">0</div>
+                    <div class="stat-label">Automation Ideas</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number gradient-text" data-target="99">0</div>
+                    <div class="stat-label">Client Satisfaction Goal (%)</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number gradient-text" data-target="24">0</div>
+                    <div class="stat-label">AI System Ready (Hours)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Case Studies</span>
+                    <h2 class="section-title">Portofolio Sistem <span class="gradient-text">Automasi Terpilih</span></h2>
+                    <p class="section-desc">Eksplorasi beberapa sistem digital teruji yang kami bangun untuk mendukung efisiensi bisnis klien.</p>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-card glass animate-glow">
+                        <div class="portfolio-tag">SAAS & ANALYTICS</div>
+                        <h3>AI Dashboard Integration</h3>
+                        <p>Pemantauan KPI, database terpusat, dan integrasi automasi chat.</p>
+                    </div>
+                    <div class="portfolio-card glass animate-glow">
+                        <div class="portfolio-tag">DATABASE & MANAGEMENT</div>
+                        <h3>Organization System</h3>
+                        <p>Sistem registrasi kartu QR digital, manajemen surat tugas, & laporan.</p>
+                    </div>
+                    <div class="portfolio-card glass animate-glow">
+                        <div class="portfolio-tag">AUDIO BRANDING</div>
+                        <h3>Lulyart Music Platform</h3>
+                        <p>Katalog musik, aransemen jingle custom B2B, dan lisensi royalty-free.</p>
+                    </div>
+                    <div class="portfolio-card glass animate-glow">
+                        <div class="portfolio-tag">WORKFLOW SYSTEM</div>
+                        <h3>Digital Office System</h3>
+                        <p>Otomatisasi tanda tangan dokumen, notifikasi email, & arsip digital.</p>
+                    </div>
+                    <div class="portfolio-card glass animate-glow">
+                        <div class="portfolio-tag">CLIENT RELATIONS</div>
+                        <h3>Premium CRM Pipeline</h3>
+                        <p>Pencatatan leads terintegrasi bot obrolan WhatsApp & dashboard visual.</p>
+                    </div>
+                    <div class="portfolio-card glass animate-glow">
+                        <div class="portfolio-tag">AI SYSTEMS</div>
+                        <h3>Internal AI Knowledge Agent</h3>
+                        <p>Layanan asisten internal CS pintar dengan basis pengetahuan terlatih.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Feedback</span>
+                    <h2 class="section-title">Apa Kata Klien <span class="gradient-text">Luly Agency?</span></h2>
+                    <p class="section-desc">Ulasan jujur dari kolaborator dan pemilik bisnis yang telah menerapkan otomatisasi digital kami.</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card glass">
+                        <div class="testi-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testi-quote">
+                            "Sebelumnya kami membalas DM & leads chat secara manual yang memakan waktu berjam-jam. Setelah dipasang AI Agent oleh Luly Agency, leads terdata rapi ke Notion dan klien dibalas kurang dari 5 detik!"
+                        </p>
+                        <div class="testi-client">
+                            <div class="client-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <h4>Hendrawan P.</h4>
+                                <p>Founder, Kopi Senja Group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass">
+                        <div class="testi-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testi-quote">
+                            "Jasa jingle dari lisensi musik katalog Lulyart sangat membangkitkan engagement video iklan kami di TikTok. Legalitasnya 100% aman, tidak perlu khawatir video di-mute atau copyright strike!"
+                        </p>
+                        <div class="testi-client">
+                            <div class="client-avatar"><i class="fa-solid fa-user-nurse"></i></div>
+                            <div>
+                                <h4>Siti Aminah</h4>
+                                <p>Marketing Lead, Beauty Care Indo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Pertanyaan yang <span class="gradient-text">Sering Diajukan</span></h2>
+                    <p class="section-desc">Temukan jawaban atas pertanyaan seputar jasa automasi AI dan lisensi audio kami.</p>
+                </div>
+                
+                <div class="faq-accordion-container">
+                    <div class="faq-item glass">
+                        <button class="faq-trigger" id="faq-q1">
+                            <span>Apa itu AI Automation?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>AI Automation adalah penerapan teknologi kecerdasan buatan (seperti model bahasa OpenAI) dan software penghubung sistem (n8n/Pipedream) untuk menjalankan tugas bisnis berulang secara otomatis tanpa intervensi manual, seperti mencatat email masuk ke database, membalas chat secara cerdas, dan menjadwalkan konten.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass">
+                        <button class="faq-trigger" id="faq-q2">
+                            <span>Apakah cocok untuk UMKM?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Sangat cocok! Kami merancang paket lisensi musik katalog Lulyart dan sistem automasi mikro dengan harga super hemat (mulai dari Rp200.000) yang disesuaikan khusus dengan anggaran serta kapasitas operasional UMKM agar bisa bersaing di ranah digital.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass">
+                        <button class="faq-trigger" id="faq-q3">
+                            <span>Berapa lama pengerjaan sistem?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Untuk pembuatan website standar dan lisensi musik katalog, pengerjaan memakan waktu 3-7 hari kerja. Sedangkan untuk perancangan integrasi AI Agent CRM B2B kustom kompleks membutuhkan waktu sekitar 14-30 hari kerja tergantung tingkat kerumitan sistem.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass">
+                        <button class="faq-trigger" id="faq-q4">
+                            <span>Apakah bisa menggunakan AppSheet?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Bisa! Kami ahli dalam merancang aplikasi internal berbasis Google AppSheet untuk kebutuhan mobile karyawan di lapangan, lengkap dengan integrasi database cloud aman.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass">
+                        <button class="faq-trigger" id="faq-q5">
+                            <span>Apakah bisa menggunakan Supabase?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Ya! Supabase adalah infrastruktur database cloud andalan kami untuk perancangan database relasional yang membutuhkan performa tinggi, realtime sync, dan sistem user authentication yang aman.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass">
+                        <button class="faq-trigger" id="faq-q6">
+                            <span>Apakah ada maintenance berkelanjutan?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Setiap paket kami sudah mencakup garansi perbaikan bug gratis selama 3 bulan pertama. Kami juga menawarkan paket maintenance bulanan opsional untuk memastikan kestabilan koneksi API, pembaruan data internal chatbot AI, serta optimasi server.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section (Mencolok & Menarik) -->
+        <section class="final-cta-section" id="final-cta">
+            <div class="container text-center">
+                <div class="final-cta-card glass-border">
+                    <h2 class="final-cta-title">Setiap Hari Anda Menunda Digitalisasi,<br><span class="gradient-text">Kompetitor Selangkah Lebih Maju.</span></h2>
+                    <p class="final-cta-desc">
+                        Mulai konsultasi gratis hari ini dan temukan bagaimana AI dapat menghemat waktu, meningkatkan produktivitas, dan membantu bisnis Anda berkembang secara dinamis.
+                    </p>
+                    <a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency,%20saya%20tertarik%20dengan%20layanan%20AI%20Automation%20/%20Audio%20Branding%20dan%20ingin%20Konsultasi%20Gratis." target="_blank" rel="noopener" class="btn btn-primary animate-pulse btn-large" id="final-cta-btn">
+                        🚀 Booking Konsultasi Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="section-tag">Contact Us</span>
+                    <h2>Klaim Promo Diskon <span class="gradient-text">Peluncuran Anda</span></h2>
+                    <p>
+                        Isi form di samping untuk mengklaim promo diskon 60% jingle musik dan AI Automation. Tim strategis Luly Agency akan menghubungi Anda via WhatsApp dalam 1x24 jam.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email Proyek</h4>
+                                <p>hello@lulyagency.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp Resmi</h4>
+                                <p><a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency..." target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">+62 831-3945-3234</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <div>
+                                <h4>Instagram Resmi</h4>
+                                <p><a href="https://instagram.com/lulyart4" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">@lulyart4</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass">
+                    <form id="lead-form">
+                        <div class="form-group">
+                            <label for="client-name">Nama Lengkap / Nama Brand</label>
+                            <input type="text" id="client-name" name="name" required placeholder="Contoh: Budi Santoso / Kopi Senja">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="client-whatsapp">Nomor WhatsApp</label>
+                            <input type="tel" id="client-whatsapp" name="whatsapp" required placeholder="Contoh: 0812xxxxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-email">Email</label>
+                            <input type="email" id="client-email" name="email" required placeholder="Contoh: budi@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selected-package">Paket yang Diminati</label>
+                            <select id="selected-package" name="service" required>
+                                <option value="" disabled selected>Pilih Layanan / Paket</option>
+                                <option value="Lite License - Rp200.000">Paket LITE: Lisensi Lagu Katalog Lulyart (Rp200.000)</option>
+                                <option value="Custom Jingle Lite - Rp499.000">Paket MEDIUM: Custom Jingle Lite (Rp499.000)</option>
+                                <option value="Premium Automation - Rp1.199.000">Paket PREMIUM: Jingle Pro + Automation (Rp1.199.000)</option>
+                                <option value="Jasa AI Automation Agent Only">Jasa Automasi AI Agent Saja (Konsultasi Custom)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-message">Brief Singkat Kebutuhan Anda</label>
+                            <textarea id="client-message" name="message" rows="3" placeholder="Jelaskan jenis produk Anda atau target musik jingle yang Anda inginkan..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Kirim Permintaan Konsultasi</button>
+                    </form>
+                    <div class="success-message hide" id="form-success-alert">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>Permintaan Terkirim!</h3>
+                        <p>Terima kasih! Tim Luly Agency akan WA kamu 1x24 jam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content text-center">
+            <p class="footer-logo"><span class="logo-accent">Luly</span> Agency</p>
+            <p class="copyright">&copy; 2026 Luly Agency. All Rights Reserved. Built with Antigravity AI.</p>
+            <div class="footer-socials">
+                <a href="https://open.spotify.com/playlist/0XtYKprk12whcVcOAXue5v?si=I3JmIEO1QWuzrA1hAy4aVQ" target="_blank" rel="noopener" aria-label="Spotify Playlist" id="footer-spotify"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.youtube.com/results?search_query=Lulyart" target="_blank" rel="noopener" aria-label="YouTube Channel" id="footer-youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/lulyart4" target="_blank" rel="noopener" aria-label="Instagram" id="footer-instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6283139453234" target="_blank" rel="noopener" aria-label="WhatsApp" id="footer-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Conversion-Focused AI Chatbot Widget (Pemicu Penjualan Menarik) -->
+    <div class="chatbot-widget-container" id="chatbot-widget-container">
+        <button class="chatbot-toggle-btn animate-pulse" id="chatbot-toggle" aria-label="Buka Chatbot AI">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        
+        <div class="chatbot-window glass hide" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-title">
+                    <span class="bot-status-dot"></span>
+                    <div>
+                        <h4>Sales Automation Agent</h4>
+                        <p>Luly Agency AI Assistant</p>
+                    </div>
+                </div>
+                <button class="chatbot-close-btn" id="chatbot-close" aria-label="Tutup Chatbot">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-chat-area" id="chat-messages-area">
+                <div class="chat-message bot-msg">
+                    Selamat datang di <strong>Luly Agency</strong>! 🚀 <br><br>
+                    Hari ini sedang ada <strong>Promo Diskon 60%</strong> untuk produk jingle komersial dan integrasi sistem AI. Ada penawaran yang ingin Anda tanyakan?
+                </div>
+            </div>
+            
+            <div class="chatbot-options-area" id="chatbot-choices">
+                <button class="chat-option-btn" data-choice="promo-jingle">🎁 Info Diskon Jingle (Rp200k)</button>
+                <button class="chat-option-btn" data-choice="buat-website">💻 Custom Website & AI Agent</button>
+                <button class="chat-option-btn" data-choice="klaim-slot">🔥 Klaim Slot Konsultasi Gratis</button>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/src/js/config/env.runtime.js"></script>
+<!-- 0. SUNTIK ENV BUAT LOCAL DEV -->
+<script>
+  window.__ENV = window.__ENV || {};
+  if (!window.__ENV.SUPABASE_URL || window.__ENV.SUPABASE_URL === '') {
+    window.__ENV.SUPABASE_URL = 'https://ocmbqnhgsnyaucwezurv.supabase.co';
+  }
+  if (!window.__ENV.SUPABASE_ANON_KEY || window.__ENV.SUPABASE_ANON_KEY === '') {
+    window.__ENV.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jbWJxbmhnc255YXVjd2V6dXJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2NzU2NDYsImV4cCI6MjA5ODI1MTY0Nn0._CVUq86Msy_QEXEq0rCUsvLLqiYli3iUiroJkYTKOKU';
+  }
+</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
+
