@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0MDNMM1BS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X0MDNMM1BS');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luly Agency - Agensi AI Automation & Solusi Digital Premium. Otomatisasikan website, database, workflow, WhatsApp, dan audio branding bisnis Anda.">
-    <title>Luly Agency | AI Automation & Digital Systems Agency</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lulyagency.com/">
+
+    <!-- SEO Meta Tags -->
+    <title>Luly Agency | AI Automation & Jasa Jingle UMKM Indonesia</title>
+    <meta name="description" content="Luly Agency membantu UMKM & Kreator mengotomatisasikan bisnis dengan Chatbot WhatsApp otomatis, sistem CRM, dan Jasa Jingle Lulyart mulai Rp200rb. Konsultasi gratis!">
+    <meta name="keywords" content="AI Automation Indonesia, Jasa Jingle UMKM, WhatsApp Chatbot, Otomatisasi Bisnis, Sonic Branding, Lulyart, Pembuatan Website AI, Automasi CRM, Luly Agency Bandung, Lulyart Banjar">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%230f0f15'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='url(%23g)' stroke-width='8'/%3E%3Cpath d='M40 35 L65 50 L40 65 Z' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%239b51e0'/%3E%3Cstop offset='100%25' stop-color='%23ff7a00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lulyagency.com/">
+    <meta property="og:title" content="Luly Agency | AI Automation & Sonic Branding Indonesia">
+    <meta property="og:description" content="Tingkatkan omzet bisnis dengan Chatbot WhatsApp otomatis, custom jingle Lulyart mulai Rp200rb, dan automasi CRM modern. Solusi digital premium untuk UMKM & Kreator.">
+    <meta property="og:image" content="https://lulyagency.com/assets/hero-visual.jpg">
+    <meta property="og:site_name" content="Luly Agency">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://lulyagency.com/">
+    <meta name="twitter:title" content="Luly Agency | AI Automation & Sonic Branding Indonesia">
+    <meta name="twitter:description" content="Tingkatkan omzet bisnis dengan Chatbot WhatsApp otomatis, custom jingle Lulyart mulai Rp200rb, dan automasi CRM modern. Solusi digital premium untuk UMKM & Kreator.">
+    <meta name="twitter:image" content="https://lulyagency.com/assets/hero-visual.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Luly Agency",
+      "image": "https://lulyagency.com/assets/hero-visual.jpg",
+      "@id": "https://lulyagency.com/#organization",
+      "url": "https://lulyagency.com",
+      "telephone": "+6283139453234",
+      "priceRange": "RP",
+      "description": "Luly Agency menyediakan jasa AI Automation, WhatsApp Chatbot otomatis, dan Sonic Branding (Custom Jingle UMKM) terjangkau.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jalan Sukabumi dalam",
+        "addressLocality": "Bandung",
+        "addressRegion": "Jawa Barat",
+        "addressCountry": "ID"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Luly Agency Office",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jalan Sukabumi dalam",
+            "addressLocality": "Bandung",
+            "addressRegion": "Jawa Barat",
+            "addressCountry": "ID"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Lulyart Studio Lab",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Langensari",
+            "addressLocality": "Banjar",
+            "addressRegion": "Jawa Barat",
+            "addressCountry": "ID"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/lulyart4/",
+        "https://www.facebook.com/share/1LNziKoCFs/",
+        "https://www.linkedin.com/in/luly-hermawan-muller-711817379"
+      ]
+    }
+    </script>
     
     <!-- Google Fonts: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +116,14 @@
                 <a href="#services" class="nav-link" id="nav-services-menu">Services</a>
                 <a href="#portfolio" class="nav-link" id="nav-portfolio-menu">Portfolio</a>
                 <a href="#faq" class="nav-link" id="nav-faq-menu">FAQ</a>
+                <select id="business-context-selector" class="business-select-nav">
+                    <option value="luly_agency">Luly Agency</option>
+                    <option value="lulyart">Lulyart</option>
+                    <option value="brigade571">Brigade571</option>
+                    <option value="luly_wallet">Luly Wallet</option>
+                    <option value="luly_umkm">Luly UMKM</option>
+                </select>
+                <a href="/login" class="nav-link" id="nav-login">Login</a>
                 <a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency,%20saya%20tertarik%20ingin%20Konsultasi%20Gratis." target="_blank" rel="noopener" class="nav-cta-btn" id="nav-cta-contact">Konsultasi Gratis</a>
             </nav>
             <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
@@ -45,15 +138,15 @@
             <div class="container hero-container">
                 <div class="hero-content">
                     <div class="badge-new animate-pulse" id="hero-badge">
-                        <span>🚀</span> Indonesia AI Automation Partner 2026
+                        <span>🚀</span> Solusi Musik & AI Terjangkau untuk UMKM
                     </div>
-                    <h1 class="hero-title">Stop Kerja Manual. <br><span class="gradient-text">Pekerjaan Makin Simpel.</span></h1>
+                    <h1 class="hero-title">Kami Bantu Pekerjaan Anda Makin Simpel. <br><span class="gradient-text">Jingle + AI WhatsApp Mulai Rp200rb!</span></h1>
                     <p class="hero-subtitle">
-                        Bagaimana jika 80% pekerjaan berulang Anda bisa berjalan otomatis? Kami membangun Website, AI Agent, Workflow Automation, Dashboard, Database, WhatsApp Automation, dan Sistem Digital yang bekerja bahkan saat Anda sedang tidur.
+                        Hemat biaya iklan dengan Jingle kustom bebas hak cipta dan chatbot WhatsApp otomatis yang membalas pelanggan 24 jam nonstop. Hasil jadi dalam 3-7 hari kerja.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary" id="hero-btn-consult">📅 Jadwalkan Konsultasi Gratis</a>
-                        <a href="#ai-sandbox" class="btn btn-outline" id="hero-btn-demo">▶ Lihat Demo AI</a>
+                        <a href="https://wa.me/6283139453234?text=Halo%20Luly%20Agency,%20saya%20tertarik%20dengan%20Jingle%20%2B%20AI%20WhatsApp%20UMKM%20mulai%20Rp200rb." target="_blank" rel="noopener" class="btn btn-primary" id="hero-btn-consult">📅 Konsultasi via WhatsApp</a>
+                        <a href="#services" class="btn btn-outline" id="hero-btn-demo">Lihat semua layanan</a>
                     </div>
                 </div>
                 
@@ -647,13 +740,18 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="client-contact">Nomor WhatsApp / Email</label>
-                            <input type="text" id="client-contact" name="contact" required placeholder="Contoh: 0812xxxxxx / budi@email.com">
+                            <label for="client-whatsapp">Nomor WhatsApp</label>
+                            <input type="tel" id="client-whatsapp" name="whatsapp" required placeholder="Contoh: 0812xxxxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-email">Email</label>
+                            <input type="email" id="client-email" name="email" required placeholder="Contoh: budi@email.com">
                         </div>
 
                         <div class="form-group">
                             <label for="selected-package">Paket yang Diminati</label>
-                            <select id="selected-package" name="package" required>
+                            <select id="selected-package" name="service" required>
                                 <option value="" disabled selected>Pilih Layanan / Paket</option>
                                 <option value="Lite License - Rp200.000">Paket LITE: Lisensi Lagu Katalog Lulyart (Rp200.000)</option>
                                 <option value="Custom Jingle Lite - Rp499.000">Paket MEDIUM: Custom Jingle Lite (Rp499.000)</option>
@@ -728,7 +826,19 @@
         </div>
     </div>
 
-    <!-- Script File -->
-    <script src="app.js"></script>
+
+<script src="/src/js/config/env.runtime.js"></script>
+<!-- 0. SUNTIK ENV BUAT LOCAL DEV -->
+<script>
+  window.__ENV = window.__ENV || {};
+  if (!window.__ENV.SUPABASE_URL || window.__ENV.SUPABASE_URL === '') {
+    window.__ENV.SUPABASE_URL = 'https://ocmbqnhgsnyaucwezurv.supabase.co';
+  }
+  if (!window.__ENV.SUPABASE_ANON_KEY || window.__ENV.SUPABASE_ANON_KEY === '') {
+    window.__ENV.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jbWJxbmhnc255YXVjd2V6dXJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2NzU2NDYsImV4cCI6MjA5ODI1MTY0Nn0._CVUq86Msy_QEXEq0rCUsvLLqiYli3iUiroJkYTKOKU';
+  }
+</script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
+

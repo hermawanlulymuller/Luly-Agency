@@ -1,5 +1,16 @@
 {
+  "name": "luly-agency",
+  "version": "1.0.0",
+  "description": "Luly Agency — AI Automation & Digital Systems SaaS Platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-repo.js"
+  },
   "dependencies": {
-    "@supabase/supabase-js": "^2.110.0"
+    "@supabase/supabase-js": "^2.49.1"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

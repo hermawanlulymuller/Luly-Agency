@@ -246,6 +246,28 @@ section {
     gap: 35px;
 }
 
+.business-select-nav {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-light);
+    color: var(--text-main);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+.business-select-nav:focus {
+    border-color: var(--clr-purple);
+    box-shadow: 0 0 10px rgba(155, 81, 224, 0.3);
+}
+.business-select-nav option {
+    background-color: #0b0c10;
+    color: var(--text-main);
+}
+
 .nav-link {
     color: var(--text-muted);
     text-decoration: none;
